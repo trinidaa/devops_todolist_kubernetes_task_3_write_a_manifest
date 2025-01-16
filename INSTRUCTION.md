@@ -16,8 +16,8 @@ kubectl port-forward todoapp-pod 8081:8080 -n todoapp
 
 ### How to test the application using the:
 ```bash
-kubectl exec -it busybox-pod -n todoapp -- curl http://todoapp:8000/api/readiness/
+kubectl exec -it busybox-pod -n todoapp -- curl http://todoapp:8080/api/readiness/
 ```
 ```bash
-kubectl exec -it busybox-pod -n todoapp -- curl http://todoapp:8000/api/liveness/
+kubectl exec -it busybox-pod -n todoapp -- curl http://todoapp:8080/api/liveness/
 ```
